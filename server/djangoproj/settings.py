@@ -62,7 +62,10 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR,'frontend/static') #the directory for the Django application to look for static files at the bottom of the file
+            os.path.join(BASE_DIR, 'frontend/static'),
+            os.path.join(BASE_DIR, 'frontend/build'),
+            os.path.join(BASE_DIR, 'frontend/build/static'),
+            #the directory for the Django application to look for static files at the bottom of the file
         ],
         'APP_DIRS': True,
         'OPTIONS': {
